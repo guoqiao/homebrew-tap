@@ -40,7 +40,10 @@ class MlxAudio < Formula
   end
 
   service do
-    run [opt_bin/"mlx-audio-server", "--host", "0.0.0.0", "--port", "8899", "--log-dir", var/"log/mlx-audio-server"]
+    run [
+      "/bin/bash", "-c",
+      "#{opt_bin}/mlx-audio-server --host 0.0.0.0 --port ${MLX_AUDIO_SERVER_PORT:-8899} --log-dir #{var}/log/mlx-audio-server"
+    ]
     keep_alive true
     working_dir var/"mlx-audio-server"
     log_path var/"log/mlx-audio-server/server.log"
