@@ -4,6 +4,8 @@ class MlxAudio < Formula
   desc "TTS and STS models locally on Mac using MLX"
   homepage "https://github.com/Blaizzy/mlx-audio"
   license "MIT"
+  #url "https://github.com/Blaizzy/mlx-audio/archive/refs/tags/v0.3.1.tar.gz"
+  #sha256 "57ad71563b178c4adead6440d700acdb53cbe0f2c4f1c2b8886f5061e74a48de"
   head "https://github.com/Blaizzy/mlx-audio.git", branch: "main"
 
   depends_on "ffmpeg"
@@ -44,6 +46,7 @@ class MlxAudio < Formula
   end
 
   service do
+    name "me.guoqiao.mlx-audio"
     run [
       "/bin/bash", "-c",
       "#{opt_bin}/mlx-audio-server --host 0.0.0.0 --port ${MLX_AUDIO_SERVER_PORT:-8899} --log-dir #{var}/log/mlx-audio-server"
