@@ -48,20 +48,27 @@ uninstall:
 
 reinstall: uninstall install
 
-service:
-	brew services start $(FORMULA)
+start:
+	brew services $@ $(FORMULA)
 
-start: service
+service: start
 
 stop:
-	brew services stop $(FORMULA)
+	brew services $@ $(FORMULA)
 
 restart:
-	brew services restart $(FORMULA)
+	brew services $@ $(FORMULA)
+
+info:
+	brew services $@ $(FORMULA)
+
+status: info
 
 log:
 	@echo "Tailing log: $(LOG_FILE)"
 	tail -f $(LOG_FILE)
+
+tail: log
 
 test:
 	brew test ./Formula/$(FORMULA).rb
