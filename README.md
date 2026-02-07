@@ -1,18 +1,13 @@
 # homebrew-mlx-audio
 
-Homebrew Tap for [mlx-audio](https://github.com/Blaizzy/mlx-audio) - an audio processing library built on Apple's MLX framework for text-to-speech (TTS), speech-to-text (STT), and speech-to-speech (STS) on Apple Silicon.
+Homebrew Formula & Tap for [mlx-audio](https://github.com/Blaizzy/mlx-audio) - an audio processing library built on Apple's MLX framework for text-to-speech (TTS), speech-to-text (STT), and speech-to-speech (STS) on Apple Silicon.
 
 ## Installation
 
-First, tap this repository:
+Tap and install:
 
 ```bash
 brew tap guoqiao/mlx-audio
-```
-
-Then install mlx-audio:
-
-```bash
 brew install mlx-audio
 ```
 
@@ -29,7 +24,35 @@ mlx_audio.stt.generate --help
 
 # Model conversion
 mlx_audio.convert --help
+
+# Run server in foreground:
+mlx_audio.server --host 0.0.0.0 --port 8899
 ```
+
+Or you can run server as a LaunchAgent service in background:
+```
+brew services start mlx-audio
+brew services stop mlx-audio
+brew services restart mlx-audio
+```
+This will serve an OpenAI-compatible API in your LAN, on port 8899 by default.
+
+
+## API Server Examples
+
+To use transcription API with glm-asr-nano-2512 model:
+
+Example 1: with openai python sdk:
+
+see [./stt_openai_client.py](./stt_openai_client.py)
+
+Example 2: use in Spokenly app as OpenAI Compatible API:
+```
+URL: http://<IP>:8899
+Model: mlx-community/glm-asr-nano-2512-8bit
+API KEY: <blank>
+```
+NOTE: `/v1` is not needed in URL here.
 
 ## About
 
