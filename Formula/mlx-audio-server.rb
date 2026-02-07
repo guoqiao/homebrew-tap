@@ -4,8 +4,10 @@ class MlxAudioServer < Formula
   desc "TTS and STS models locally on Mac using MLX"
   homepage "https://github.com/Blaizzy/mlx-audio"
   license "MIT"
-  #url "https://github.com/Blaizzy/mlx-audio/archive/refs/tags/v0.3.1.tar.gz"
-  #sha256 "57ad71563b178c4adead6440d700acdb53cbe0f2c4f1c2b8886f5061e74a48de"
+  # stable version: brew install guoqiao/tap/mlx-audio-server
+  url "https://github.com/Blaizzy/mlx-audio.git", revision: "ddee9632f1e40f8eefda897921933005578677bc"
+  version "0.3.1-ddee963"
+  # HEAD version: brew install --HEAD guoqiao/tap/mlx-audio-server
   head "https://github.com/Blaizzy/mlx-audio.git", branch: "main"
 
   depends_on "ffmpeg"
