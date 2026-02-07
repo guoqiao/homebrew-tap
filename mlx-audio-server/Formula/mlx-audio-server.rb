@@ -1,4 +1,4 @@
-class MlxAudio < Formula
+class MlxAudioServer < Formula
   include Language::Python::Virtualenv
 
   desc "TTS and STS models locally on Mac using MLX"
@@ -45,7 +45,7 @@ class MlxAudio < Formula
   end
 
   service do
-    name macos: "me.guoqiao.mlx-audio"
+    name macos: "me.guoqiao.mlx-audio-server"
     run [opt_bin/"mlx-audio-server", "--host", "0.0.0.0", "--port", "8899", "--log-dir", var/"log/mlx-audio-server"]
     keep_alive true
     working_dir var/"mlx-audio-server"
