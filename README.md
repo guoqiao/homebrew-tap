@@ -2,16 +2,11 @@
 
 Homebrew tap for guoqiao's brew formula collection.
 
-# Install Tap
-
-```
-brew tap guoqiao/tap
-```
-
 # Install Formula
 
-install mlx-audio cli tools and start a local openai-compatible transcription api LaunchAgent service:
+install mlx-audio cli tools and start a local openai-compatible transcription api service via LaunchAgent:
 ```
+# macOS only
 brew install guoqiao/tap/mlx-audio-server
 brew service start mlx-audio-server
 ```
