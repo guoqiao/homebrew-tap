@@ -18,8 +18,9 @@ brew service start mlx-audio-server
 
 install modern unix cli tools in 1 cmd:
 ```
-brew install guoqiao/tap/modern-unix
+# head-only, always install the latest commit on main branch
+brew install --HEAD guoqiao/tap/modern-unix
 
 ```
 NOTE:
-based on [modern-unix](https://github.com/ibraheemdev/modern-unix/blob/master/README.md).
+based on [modern-unix](https://github.com/ibraheemdev/modern-unix/blob/master/README.md), but will evolve.

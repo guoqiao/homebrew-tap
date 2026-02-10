@@ -1,12 +1,10 @@
 class ModernUnix < Formula
   desc "Install modern Unix CLI tools in one command"
-  homepage "https://github.com/ibraheemdev/modern-unix"
-  url "https://github.com/ibraheemdev/modern-unix/archive/67ee5aba0e5660b76cc1a437c64ad165212148d1.tar.gz"
-  version "2026.02.10"
-  sha256 "7b314d13df9fb47ea9a8621bc665d6053ee09b491408d6c083768b0c9504614b"
+  homepage "https://github.com/guoqiao/homebrew-tap"
+  head "https://github.com/guoqiao/homebrew-tap.git", branch: "main"
   license "MIT"
 
-  # List based on ibraheemdev/modern-unix README.
+  # Curated list of modern Unix CLI tools.
   depends_on "bat"
   depends_on "eza"
   depends_on "lsd"
