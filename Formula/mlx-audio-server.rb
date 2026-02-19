@@ -6,7 +6,7 @@ class MlxAudioServer < Formula
   license "MIT"
 
   url "https://github.com/guoqiao/mlx-audio.git", revision: "b017be1"
-  version "0.3.2-b017be1"
+  version "2026022001"
 
   depends_on "ffmpeg"
   depends_on "python@3.12"
