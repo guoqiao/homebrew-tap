@@ -33,7 +33,7 @@ class MlxAudioServer < Formula
     keep_alive true
     working_dir var/"mlx-audio-server"
     log_path var/"log/mlx-audio-server/server.log"
-    error_log_path var/"log/mlx-audio-server/server.error.log"
+    error_log_path var/"log/mlx-audio-server/server.log"
     environment_variables PATH: std_service_path_env
   end
 
