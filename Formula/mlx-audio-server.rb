@@ -3,10 +3,9 @@ class MlxAudioServer < Formula
 
   desc "TTS and STS models locally on Mac using MLX"
   homepage "https://github.com/guoqiao/mlx-audio"
+  url "https://github.com/guoqiao/mlx-audio.git", revision: "e31d188"
+  version "2026032901"
   license "MIT"
-
-  url "https://github.com/guoqiao/mlx-audio.git", revision: "54e64f2"
-  version "2026030601"
 
   depends_on "ffmpeg"
   depends_on "python@3.12"
