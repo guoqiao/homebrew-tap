@@ -35,6 +35,7 @@ class Clis < Formula
   depends_on "time"
   depends_on "tldr"
   depends_on "tree"
+  depends_on "uv"
   depends_on "xh"
   depends_on "zoxide"
   depends_on "zsh"
