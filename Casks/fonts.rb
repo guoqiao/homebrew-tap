@@ -1,4 +1,4 @@
-cask "essential-fonts" do
+cask "fonts" do
   version :latest
   sha256 :no_check
 

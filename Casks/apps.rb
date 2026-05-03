@@ -1,4 +1,4 @@
-cask "essential-apps" do
+cask "apps" do
   version :latest
   sha256 :no_check
 

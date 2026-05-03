@@ -1,4 +1,4 @@
-class ModernUnix < Formula
+class Clis < Formula
   desc "Install modern Unix CLI tools in one command"
   homepage "https://github.com/guoqiao/homebrew-tap"
   head "https://github.com/guoqiao/homebrew-tap.git", branch: "main"
@@ -27,6 +27,7 @@ class ModernUnix < Formula
   depends_on "lazygit"
   depends_on "lsd"
   depends_on "mcfly"
+  depends_on "neovim"
   depends_on "procs"
   depends_on "ripgrep"
   depends_on "sd"
@@ -39,10 +40,10 @@ class ModernUnix < Formula
 
   def install
     # Metapackage formula: dependencies provide all executables.
-    (prefix/"share/modern-unix").mkpath
+    (prefix/"share/clis").mkpath
   end
 
   test do
-    assert_predicate prefix/"share/modern-unix", :directory?
+    assert_predicate prefix/"share/clis", :directory?
   end
 end
