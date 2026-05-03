@@ -11,6 +11,7 @@ class Clis < Formula
   depends_on "cheat"
   depends_on "choose"
   depends_on "curlie"
+  depends_on "direnv"
   depends_on "doggo"
   depends_on "duf"
   depends_on "dust"
