@@ -10,4 +10,6 @@ cask "essential-fonts" do
   depends_on cask: "font-fira-code"
   depends_on cask: "font-jetbrains-mono"
   depends_on cask: "font-source-code-pro"
+
+  stage_only true
 end
