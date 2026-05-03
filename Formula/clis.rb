@@ -32,7 +32,6 @@ class Clis < Formula
   depends_on "procs"
   depends_on "ripgrep"
   depends_on "sd"
-  depends_on "time"
   depends_on "tldr"
   depends_on "tree"
   depends_on "uv"
@@ -49,3 +48,4 @@ class Clis < Formula
     assert_predicate prefix/"share/clis", :directory?
   end
 end
+
