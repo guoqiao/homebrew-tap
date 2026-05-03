@@ -1,8 +1,8 @@
 class Clis < Formula
   desc "Install modern Unix CLI tools in one command"
   homepage "https://github.com/guoqiao/homebrew-tap"
-  head "https://github.com/guoqiao/homebrew-tap.git", branch: "main"
   license "MIT"
+  head "https://github.com/guoqiao/homebrew-tap.git", branch: "main"
 
   # Curated list of modern Unix CLI tools.
   depends_on "bat"
@@ -48,4 +48,3 @@ class Clis < Formula
     assert_predicate prefix/"share/clis", :directory?
   end
 end
-

@@ -21,3 +21,5 @@ fonts: tap
 	make fonts-cache
 	make fonts-family
 
+audit:
+	brew audit --strict Formula/clis.rb Casks/fonts.rb Casks/apps.rb
