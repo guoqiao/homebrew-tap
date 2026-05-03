@@ -12,11 +12,13 @@ brew tap guoqiao/tap
 
 Install CLI tools:
 
+install MLX Audio Server (macOS only, with service support)
 ```bash
-# MLX Audio Server (macOS only, with service support)
 brew install guoqiao/tap/mlx-audio-server
+```
 
-# Modern Unix CLI tools (metapackage)
+install Modern Unix CLI tools (metapackage)
+```
 brew install --HEAD guoqiao/tap/modern-unix
 ```
 
@@ -25,9 +27,11 @@ brew install --HEAD guoqiao/tap/modern-unix
 Install fonts:
 
 ```bash
-brew install guoqiao/tap/essential-fonts
+brew install --cask guoqiao/tap/essential-fonts
 ```
 
-## License
+Install apps:
 
-MIT - see LICENSE file.
+```bash
+brew install --cask guoqiao/tap/essential-apps
+```
