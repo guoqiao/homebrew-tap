@@ -4,7 +4,7 @@ cask "essential-fonts" do
 
   name "Essential Coding Fonts"
   desc "Meta cask to install Fira Code, JetBrains Mono, and Source Code Pro"
-  homepage "https://github.com/idevpi/homebrew-tap"
+  homepage "https://github.com/guoqiao/homebrew-tap"
 
   depends_on cask: "font-fira-code"
   depends_on cask: "font-jetbrains-mono"
