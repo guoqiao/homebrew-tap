@@ -1,7 +1,7 @@
 class ModernUnix < Formula
   desc "Install modern Unix CLI tools in one command"
-  homepage "https://github.com/guoqiao/homebrew-tap"
-  head "https://github.com/guoqiao/homebrew-tap.git", branch: "main"
+  homepage "https://github.com/idevpi/homebrew-tap"
+  head "https://github.com/idevpi/homebrew-tap.git", branch: "main"
   license "MIT"
 
   # Curated list of modern Unix CLI tools.

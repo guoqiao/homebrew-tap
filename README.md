@@ -1,21 +1,33 @@
-# guoqiao's Homebrew Tap
+# homebrew-tap
 
-Homebrew tap for guoqiao's brew formula collection.
+Personal Homebrew tap for formulae and casks.
 
-# Install Formula
+## Installation
 
-install mlx-audio cli tools and start a local openai-compatible transcription api service via LaunchAgent:
-```
-# macOS only
-brew install guoqiao/tap/mlx-audio-server
-brew service start mlx-audio-server
+```bash
+brew tap idevpi/tap
 ```
 
-install modern unix cli tools in 1 cmd:
-```
-# head-only, always install the latest commit on main branch
-brew install --HEAD guoqiao/tap/modern-unix
+## Formulae
 
+Install CLI tools:
+
+```bash
+# MLX Audio Server (macOS only, with service support)
+brew install idevpi/tap/mlx-audio-server
+
+# Modern Unix CLI tools (metapackage)
+brew install --HEAD idevpi/tap/modern-unix
 ```
-NOTE:
-based on [modern-unix](https://github.com/ibraheemdev/modern-unix/blob/master/README.md), but will evolve.
+
+## Casks
+
+Install fonts:
+
+```bash
+brew install idevpi/tap/essential-fonts
+```
+
+## License
+
+MIT - see LICENSE file.
